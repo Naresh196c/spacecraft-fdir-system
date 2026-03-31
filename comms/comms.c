@@ -6,10 +6,7 @@
 #include "comms.h"
 #include "../signals/signal_handler.h"
 
-/* ─────────────────────────────────────────
-   GLOBAL VARIABLES
-   Shared between comms.c and comms_threads.c
-───────────────────────────────────────── */
+
 comms_data_t    g_comms;
 pthread_mutex_t g_comms_mutex = PTHREAD_MUTEX_INITIALIZER;
 telemetry_bus_t *g_bus  = NULL;
@@ -17,9 +14,7 @@ sem_t           *g_sem  = NULL;
 mqd_t            g_mq;
 int              g_fifo_fd = -1;
 
-/* ─────────────────────────────────────────
-   HELPER: SEND FAULT TO MESSAGE QUEUE
-───────────────────────────────────────── */
+
 void comms_send_fault(const char *severity,
                       float value,
                       float threshold,
