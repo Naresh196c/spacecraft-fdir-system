@@ -17,15 +17,11 @@ static mqd_t            g_mq;
 
 /* ─────────────────────────────────────────
    Print the spacecraft banner on startup
+
 ───────────────────────────────────────── */
+
+
 static void print_banner(void) {
-    printf("%s",COLOR_CYAN);
-    printf("╔══════════════════════════════════════════════════════╗\n");
-    printf("║     SPACECRAFT ONBOARD FAULT DETECTION SYSTEM       ║\n");
-    printf("║          FDIR v%s  |  Mission: %-16s     ║\n",
-           FDIR_VERSION, MISSION_NAME);
-    printf("╚══════════════════════════════════════════════════════╝\n");
-    printf("%s",COLOR_RESET);
 }
 
 /* ─────────────────────────────────────────
