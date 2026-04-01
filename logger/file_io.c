@@ -6,7 +6,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include "logger.h"
-
+#include <stddef.h>
 /* ---------- OPEN FILE ---------- */
 int fdr_open(void) {
 
