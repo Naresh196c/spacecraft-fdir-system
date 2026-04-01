@@ -1,4 +1,3 @@
-// main.c (Simplified Version)
 
 #include <stdio.h>
 #include <stdlib.h>
